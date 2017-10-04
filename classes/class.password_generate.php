@@ -1,30 +1,21 @@
 <?php 
-
-
 class password {
 
+private $char_length;
 
+private $number_length;
 
-public $char_length;
+private $symbol_length;
 
-public $number_length;
+private $char;
 
-public $symbol_length;
+private $number;
 
-public $char;
+private $symbol;
 
-public $number;
+private $password;
 
-public $symbol;
-
-public $password;
-/**
-*@param $value
-*@return length
-*/
-
-
-public function setCharLength($value) {
+private function setCharLength($value) {
 
 return $this->char_length = $value;
 
@@ -32,18 +23,18 @@ return $this->char_length = $value;
 
 
 
-public function setNumberLength($value) {
+private function setNumberLength($value) {
 
 return $this->number_length = $value;
 
 }
 
-public function setSymbolLength($value) {
+private function setSymbolLength($value) {
 return $this->symbol_length = $value;
 
 }
 
-public function generateChar() {
+private function generateChar() {
 
 $chars = str_shuffle("abcdefghijklmnopqrstuvwxyz");
 
@@ -51,7 +42,7 @@ return $this->char = substr($chars, 0, $this->char_length);
 
 }
 
-public function generateNumber() {
+private function generateNumber() {
 
 $numbers = str_shuffle("1234567890");
 
@@ -59,7 +50,7 @@ return $this->number = substr($numbers, 0, $this->number_length);
 
 }
 
-public function generateSymbol() {
+private function generateSymbol() {
 
 $symbols = str_shuffle("!@#$%^&*()_+><?");
 
@@ -68,7 +59,7 @@ return $this->symbol = substr($symbols, 0, $this->symbol_length);
 }
 
 
-public function generatePassword() {
+private function generatePassword() {
 
 
 echo $password = $this->char.$this->number.$this->symbol;
