@@ -25,6 +25,38 @@ Password generator
   <input type="number" class="form-control" name="symbol_length" placeholder="enter symbol length">
     <br/>
 <input type="submit" class="btn btn-primary" value="lets go">
+<div class="co-xs-12 col-lg-12">
+<br/><br/>
+<br/><br/>
+<br/>
+<br/>
+</div>
+<div class="col-xs-6 col-lg-6 col-md-2 text-center" style="padding: 20px; background-color: #fff; font-family: ubuntu; font-size: 28px; border:1px solid #eee; height: 300px;">
+<form action="index.php" method="POST">
+    
+    <input type="number" class="form-control" name="char_length" placeholder="enter character limit">
+    <br/>
+      <input type="number" class="form-control" name="number_length" placeholder="enter number limit">
+    <br/>
+  <input type="number" class="form-control" name="symbol_length" placeholder="enter symbol length">
+    <br/>
+<input type="submit" class="btn btn-primary" value="lets go">
+<div class="co-xs-12 col-lg-12">
+<br/><br/>
+<br/><br/>
+<br/>
+<br/>
+</div>
+<div class="col-xs-6 col-lg-6 col-md-2 text-center" style="padding: 20px; background-color: #fff; font-family: ubuntu; font-size: 28px; border:1px solid #eee; height: 300px;">
+<form action="index.php" method="POST">
+    
+    <input type="number" class="form-control" name="char_length" placeholder="enter character limit">
+    <br/>
+      <input type="number" class="form-control" name="number_length" placeholder="enter number limit">
+    <br/>
+  <input type="number" class="form-control" name="symbol_length" placeholder="enter symbol length">
+    <br/>
+<input type="submit" class="btn btn-primary" value="lets go">
 
 
 </form>
